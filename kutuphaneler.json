@@ -1,0 +1,102 @@
+[
+    {
+        "id": "pancar-deposu",
+        "ad": "Pancar Deposu",
+        "dolu": 95,
+        "kapasite": 120,
+        "x": 40.21,
+        "y": 28.99,
+        "erisilebilirlik": "9.2/10",
+        "bekleyen": 0
+    },
+    {
+        "id": "koza-kutuphane",
+        "ad": "Koza Kütüphane",
+        "dolu": 50,
+        "kapasite": 60,
+        "x": 40.21,
+        "y": 28.92,
+        "erisilebilirlik": "7.8/10",
+        "bekleyen": 8
+    },
+    {
+        "id": "gol-yazievi",
+        "ad": "Göl Yazıevi",
+        "dolu": 9,
+        "kapasite": 15,
+        "x": 40.18,
+        "y": 28.67,
+        "erisilebilirlik": "7.0/10",
+        "bekleyen": 0
+    },
+    {
+        "id": "siir-kutuphanesi",
+        "ad": "Şiir Kütüphanesi",
+        "dolu": 20,
+        "kapasite": 80,
+        "x": 40.22,
+        "y": 28.93,
+        "erisilebilirlik": "8.2/10",
+        "bekleyen": 0
+    },
+    {
+        "id": "cocuk-kutuphanesi",
+        "ad": "Çocuk Kütüphanesi",
+        "dolu": 2,
+        "kapasite": 50,
+        "x": 40.21,
+        "y": 28.94,
+        "erisilebilirlik": "8.8/10",
+        "bekleyen": 0
+    },
+    {
+        "id": "akkilic-kutuphanesi",
+        "ad": "Akkılıç Kütüphanesi",
+        "dolu": 192,
+        "kapasite": 200,
+        "x": 40.21,
+        "y": 28.95,
+        "erisilebilirlik": "9.2/10",
+        "bekleyen": 0
+    },
+    {
+        "id": "ucevler-kutuphanesi",
+        "ad": "Üçevler Kütüphanesi",
+        "dolu": 15,
+        "kapasite": 70,
+        "x": 40.19,
+        "y": 28.96,
+        "erisilebilirlik": "7.5/10",
+        "bekleyen": 0
+    },
+    {
+        "id": "demirci-kutuphanesi",
+        "ad": "Demirci Kütüphanesi",
+        "dolu": 15,
+        "kapasite": 40,
+        "x": 40.16,
+        "y": 28.94,
+        "erisilebilirlik": "6.8/10",
+        "bekleyen": 0
+    },
+    {
+        "id": "gorukle-genclik-merkezi",
+        "ad": "Görükle Gençlik Merkezi",
+        "dolu": 199,
+        "kapasite": 300,
+        "x": 40.22,
+        "y": 28.85,
+        "erisilebilirlik": "9.8/10",
+        "bekleyen": 0
+    },
+    {
+        "id": "gorukle-genclik-evi",
+        "ad": "Görükle Gençlik Evi",
+        "dolu": 50,
+        "kapasite": 100,
+        "x": 40.22,
+        "y": 28.85,
+        "erisilebilirlik": "9.5/10",
+        "bekleyen": 0
+    }
+]

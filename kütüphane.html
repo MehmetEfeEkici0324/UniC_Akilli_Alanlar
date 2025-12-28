@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kütüphaneler</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="kütüphanestyle.css">
+</head>
+<body>
+    <script src="kutuphaneJS.js"></script>
+        <div id="kutuphane-ai-btn" class="ai-asistan-btn">
+            <div class="ai-ikon-wrapper">🤖</div>
+            <span>En Uygun Yeri Bul</span>
+        </div>
+
+        <div id="ai-panel" class="ai-panel">
+            <div class="panel-ust">
+                <h4>Nilüfer Akıllı Asistan</h4>
+                <span id="panel-kapat">✕</span>
+            </div>
+            <div id="ai-sonuc" class="panel-icerik">
+                <p>Butona basarak analizi başlatın...</p>
+            </div>
+        </div>
+
+    <header class="ust-bilgi">
+            <nav class="ana-gezinti" id="ana-menu">
+                <div class="konteynir">
+                    <a href="index.html" class="logo">
+                        <span class="logo-metin">NİLÜFER</span>
+                        <span class="logo-alt-metin">BELEDİYESİ</span>
+                    </a>
+
+                    <ul class="menu-listesi">
+                        <li class="menu-ogesi"><a href="#kurumsal" class="menu-linki">Kurumsal</a></li>
+                        <li class="menu-ogesi"><a href="sosyaltesisler.html" class="menu-linki">Hizmetlerimiz</a></li>
+                        <li class="menu-ogesi"><a href="#projeler" class="menu-linki">Projelerimiz</a></li>
+                        <li class="menu-ogesi"><a href="#iletisim" class="menu-linki">İletişim</a></li>
+                    </ul>
+
+                </div>
+            </nav>
+        </header>
+
+        <section class="kutuphane-izleme-paneli">
+            <div class="konteynir">
+                <div class="kart-listesi">
+                    
+                    <div class="bilgi-karti" id="gorukle-genclik-evi">
+                        <h3 class="yer-adi">Görükle Gençlik Evi</h3>
+                        <div class="kart-govde">
+                            <div class="sol-veriler">
+                                <div class="veri-satiri"><span class="etiket">Dolu:</span> <span class="deger">--</span></div>
+                                <div class="veri-satiri"><span class="etiket">Boş:</span> <span class="deger">--</span></div>
+                                <div class="veri-satiri bekleyen"><span class="etiket">Bekleyen:</span> <span class="deger">--</span></div>
+                            </div>
+                            <div class="sag-doluluk">
+                                <div class="yuzde-daire">--</div>
+                                <div class="durum-bar-arkaplan">
+                                    <div class="durum-bar-doluluk" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                            <div class="kart-islemler">
+                                <button class="islem-btn giris-btn" onclick="kapasiteDegistir(this, 'giris')">Giriş</button>
+                                <button class="islem-btn cikis-btn" onclick="kapasiteDegistir(this, 'cikis')">Çıkış</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bilgi-karti" id="siir-kutuphanesi">
+                        <h3 class="yer-adi">Şiir Kütüphanesi</h3>
+                        <div class="kart-govde">
+                            <div class="sol-veriler">
+                                <div class="veri-satiri"><span class="etiket">Dolu:</span> <span class="deger">--</span></div>
+                                <div class="veri-satiri"><span class="etiket">Boş:</span> <span class="deger">--</span></div>
+                                <div class="veri-satiri"><span class="etiket">Bekleyen:</span> <span class="deger">--</span></div>
+                            </div>
+                            <div class="sag-doluluk">
+                                <div class="yuzde-daire">--</div>
+                                <div class="durum-bar-arkaplan">
+                                    <div class="durum-bar-doluluk" style="width: 30%;"></div>
+                                </div>
+                            </div>
+                            <div class="kart-islemler">
+                                <button class="islem-btn giris-btn" onclick="kapasiteDegistir(this, 'giris')">Giriş</button>
+                                <button class="islem-btn cikis-btn" onclick="kapasiteDegistir(this, 'cikis')">Çıkış</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bilgi-karti" id="gorukle-genclik-merkezi">
+                        <h3 class="yer-adi">Görükle Gençlik Merkezi</h3>
+                        <div class="kart-govde">
+                            <div class="sol-veriler">
+                                <div class="veri-satiri"><span class="etiket">Dolu:</span> <span class="deger">--</span></div>
+                                <div class="veri-satiri"><span class="etiket">Boş:</span> <span class="deger">--</span></div>
+                                <div class="veri-satiri bekleyen-kritik"><span class="etiket">Bekleyen:</span> <span class="deger">--</span></div>
+                            </div>
+                            <div class="sag-doluluk">
+                                <div class="yuzde-daire">--</div>
+                                <div class="durum-bar-arkaplan">
+                                    <div class="durum-bar-doluluk" style="width: 95%;"></div>
+                                </div>
+                            </div>
+                            <div class="kart-islemler">
+                                <button class="islem-btn giris-btn" onclick="kapasiteDegistir(this, 'giris')">Giriş</button>
+                                <button class="islem-btn cikis-btn" onclick="kapasiteDegistir(this, 'cikis')">Çıkış</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bilgi-karti" id="koza-kutuphane">
+                        <h3 class="yer-adi">Koza Kütüphane</h3>
+                        <div class="kart-govde">
+                            <div class="sol-veriler">
+                                <div class="veri-satiri"><span class="etiket">Dolu:</span> <span class="deger">--</span></div>
+                                <div class="veri-satiri"><span class="etiket">Boş:</span> <span class="deger">--</span></div>
+                                <div class="veri-satiri"><span class="etiket">Bekleyen:</span> <span class="deger">--</span></div>
+                            </div>
+                            <div class="sag-doluluk">
+                                <div class="yuzde-daire">--</div>
+                                <div class="durum-bar-arkaplan">
+                                    <div class="durum-bar-doluluk" style="width: 66%;"></div>
+                                </div>
+                            </div>
+                            <div class="kart-islemler">
+                                <button class="islem-btn giris-btn" onclick="kapasiteDegistir(this, 'giris')">Giriş</button>
+                                <button class="islem-btn cikis-btn" onclick="kapasiteDegistir(this, 'cikis')">Çıkış</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bilgi-karti" id="gol-yazievi">
+                        <h3 class="yer-adi">Göl Yazıevi</h3>
+                        <div class="kart-govde">
+                            <div class="sol-veriler">
+                                <div class="veri-satiri"><span class="etiket">Dolu:</span> <span class="deger">--</span></div>
+                                <div class="veri-satiri"><span class="etiket">Boş:</span> <span class="deger">--</span></div>
+                                <div class="veri-satiri"><span class="etiket">Bekleyen:</span> <span class="deger">--</span></div>
+                            </div>
+                            <div class="sag-doluluk">
+                                <div class="yuzde-daire">--</div>
+                                <div class="durum-bar-arkaplan">
+                                    <div class="durum-bar-doluluk" style="width: 50%;"></div>
+                                </div>
+                            </div>
+                            <div class="kart-islemler">
+                                <button class="islem-btn giris-btn" onclick="kapasiteDegistir(this, 'giris')">Giriş</button>
+                                <button class="islem-btn cikis-btn" onclick="kapasiteDegistir(this, 'cikis')">Çıkış</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bilgi-karti" id="cocuk-kutuphanesi">
+                        <h3 class="yer-adi">Çocuk Kütüphanesi</h3>
+                        <div class="kart-govde">
+                            <div class="sol-veriler">
+                                <div class="veri-satiri"><span class="etiket">Dolu:</span> <span class="deger">--</span></div>
+                                <div class="veri-satiri"><span class="etiket">Boş:</span> <span class="deger">--</span></div>
+                                <div class="veri-satiri"><span class="etiket">Bekleyen:</span> <span class="deger">--</span></div>
+                            </div>
+                            <div class="sag-doluluk">
+                                <div class="yuzde-daire">--</div>
+                                <div class="durum-bar-arkaplan">
+                                    <div class="durum-bar-doluluk" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                            <div class="kart-islemler">
+                                <button class="islem-btn giris-btn" onclick="kapasiteDegistir(this, 'giris')">Giriş</button>
+                                <button class="islem-btn cikis-btn" onclick="kapasiteDegistir(this, 'cikis')">Çıkış</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bilgi-karti" id="akkilic-kutuphanesi">
+                        <h3 class="yer-adi">Akkılıç Kütüphanesi</h3>
+                        <div class="kart-govde">
+                            <div class="sol-veriler">
+                                <div class="veri-satiri"><span class="etiket">Dolu:</span> <span class="deger">--</span></div>
+                                <div class="veri-satiri"><span class="etiket">Boş:</span> <span class="deger">--</span></div>
+                                <div class="veri-satiri"><span class="etiket">Bekleyen:</span> <span class="deger">--</span></div>
+                            </div>
+                            <div class="sag-doluluk">
+                                <div class="yuzde-daire">--</div>
+                                <div class="durum-bar-arkaplan">
+                                    <div class="durum-bar-doluluk" style="width: 93%;"></div>
+                                </div>
+                            </div>
+                            <div class="kart-islemler">
+                                <button class="islem-btn giris-btn" onclick="kapasiteDegistir(this, 'giris')">Giriş</button>
+                                <button class="islem-btn cikis-btn" onclick="kapasiteDegistir(this, 'cikis')">Çıkış</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bilgi-karti" id="ucevler-kutuphanesi">
+                        <h3 class="yer-adi">Üçevler Kütüphanesi</h3>
+                        <div class="kart-govde">
+                            <div class="sol-veriler">
+                                <div class="veri-satiri"><span class="etiket">Dolu:</span> <span class="deger">--</span></div>
+                                <div class="veri-satiri"><span class="etiket">Boş:</span> <span class="deger">--</span></div>
+                                <div class="veri-satiri"><span class="etiket">Bekleyen:</span> <span class="deger">--</span></div>
+                            </div>
+                            <div class="sag-doluluk">
+                                <div class="yuzde-daire">--</div>
+                                <div class="durum-bar-arkaplan">
+                                    <div class="durum-bar-doluluk" style="width: 58%;"></div>
+                                </div>
+                            </div>
+                            <div class="kart-islemler">
+                                <button class="islem-btn giris-btn" onclick="kapasiteDegistir(this, 'giris')">Giriş</button>
+                                <button class="islem-btn cikis-btn" onclick="kapasiteDegistir(this, 'cikis')">Çıkış</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bilgi-karti" id="demirci-kutuphanesi">
+                        <h3 class="yer-adi">Demirci Kütüphanesi</h3>
+                        <div class="kart-govde">
+                            <div class="sol-veriler">
+                                <div class="veri-satiri"><span class="etiket">Dolu:</span> <span class="deger">--</span></div>
+                                <div class="veri-satiri"><span class="etiket">Boş:</span> <span class="deger">--</span></div>
+                                <div class="veri-satiri"><span class="etiket">Bekleyen:</span> <span class="deger">--</span></div>
+                            </div>
+                            <div class="sag-doluluk">
+                                <div class="yuzde-daire">--</div>
+                                <div class="durum-bar-arkaplan">
+                                    <div class="durum-bar-doluluk" style="width: 60%;"></div>
+                                </div>
+                            </div>
+                            <div class="kart-islemler">
+                                <button class="islem-btn giris-btn" onclick="kapasiteDegistir(this, 'giris')">Giriş</button>
+                                <button class="islem-btn cikis-btn" onclick="kapasiteDegistir(this, 'cikis')">Çıkış</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bilgi-karti" id="pancar-deposu">
+                        <h3 class="yer-adi">Pancar Deposu</h3>
+                        <div class="kart-govde">
+                            <div class="sol-veriler">
+                                <div class="veri-satiri"><span class="etiket">Dolu:</span> <span class="deger">--</span></div>
+                                <div class="veri-satiri"><span class="etiket">Boş:</span> <span class="deger">--</span></div>
+                                <div class="veri-satiri bekleyen-kritik"><span class="etiket">Bekleyen:</span> <span class="deger">--</span></div>
+                            </div>
+                            <div class="sag-doluluk">
+                                <div class="yuzde-daire">--</div>
+                                <div class="durum-bar-arkaplan">
+                                    <div class="durum-bar-doluluk" style="width: 93%;"></div>
+                                </div>
+                            </div>
+                            <div class="kart-islemler">
+                                <button class="islem-btn giris-btn" onclick="kapasiteDegistir(this, 'giris')">Giriş</button>
+                                <button class="islem-btn cikis-btn" onclick="kapasiteDegistir(this, 'cikis')">Çıkış</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div> </div>
+        </section>
+</body>
+</html>

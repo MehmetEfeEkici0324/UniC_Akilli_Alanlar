@@ -1,0 +1,42 @@
+[
+    {
+        "id": "muze-misi-foto",
+        "ad": "Misi Fotoğraf Müzesi",
+        "dolu": 45,
+        "kapasite": 100,
+        "saatler": "10:00 - 18:30",
+        "erisilebilirlik": "8.5/10"
+    },
+    {
+        "id": "muze-edebiyat",
+        "ad": "Edebiyat Müzesi",
+        "dolu": 18,
+        "kapasite": 80,
+        "saatler": "10:00 - 18:30",
+        "erisilebilirlik": "7.2/10"
+    },
+    {
+        "id": "muze-mubadele",
+        "ad": "Görükle Mübadele Evi",
+        "dolu": 90,
+        "kapasite": 120,
+        "saatler": "10:00 - 18:30",
+        "erisilebilirlik": "9.0/10"
+    },
+    {
+        "id": "muze-saglik",
+        "ad": "Sağlık Müzesi",
+        "dolu": 32,
+        "kapasite": 150,
+        "saatler": "10:00 - 18:30",
+        "erisilebilirlik": "8.8/10"
+    },
+    {
+        "id": "muze-müzik",
+        "ad": "Müzik Müzesi",
+        "dolu": 32,
+        "kapasite": 150,
+        "saatler": "10:00 - 18:30",
+        "erisilebilirlik": "8.8/10"
+    }
+]

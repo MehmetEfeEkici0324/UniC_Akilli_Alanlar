@@ -1,0 +1,206 @@
+
+.ai-asistan-btn {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    background: linear-gradient(135deg, #005596, #8dc63f);
+    color: white;
+    padding: 15px 25px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 10px 25px rgba(0,85,150,0.3);
+    z-index: 1000;
+    transition: all 0.3s ease;
+    animation: ai-pulse 2s infinite;
+}
+
+@keyframes ai-pulse {
+    0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(141, 198, 63, 0.7); }
+    70% { transform: scale(1.05); box-shadow: 0 0 0 15px rgba(141, 198, 63, 0); }
+    100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(141, 198, 63, 0); }
+}
+
+.ai-panel {
+    position: fixed;
+    top: 0;
+    right: -400px;
+    width: 350px;
+    height: 100%;
+    background: white;
+    box-shadow: -5px 0 20px rgba(0,0,0,0.1);
+    transition: right 0.4s ease-in-out;
+    z-index: 9999;
+}
+
+.ai-panel.acik {
+    right: 0 !important;
+}
+
+.panel-ust {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #8dc63f;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    color: #005596;
+}
+
+#panel-kapat { cursor: pointer; font-weight: bold; }
+
+.oneri-kart {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 15px;
+    border-left: 5px solid #8dc63f;
+    margin-top: 20px;
+}
+.kutuphane-izleme-paneli {
+    padding: 50px 0;
+    background-color: #f8f9fa; 
+}
+
+.konteynir {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.kart-listesi {
+    display: grid;
+    grid-template-columns: repeat(2, 500px); 
+    justify-content: center; 
+    gap: 40px;
+}
+
+.bilgi-karti {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 25px; 
+    width: 500px;
+    height: 300px;
+    padding: 35px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    transition: all 0.3s ease;
+}
+
+.bilgi-karti:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 85, 150, 0.15);
+    border-color: #005596;
+}
+
+.yer-adi {
+    color: #005596;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #8dc63f;
+    padding-bottom: 10px;
+}
+
+.kart-govde {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.sol-veriler {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.veri-satiri {
+    font-size: 1.1rem;
+    color: #444;
+}
+
+.etiket {
+    font-weight: 600;
+    width: 120px;
+    display: inline-block;
+}
+
+.deger {
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+
+.sag-doluluk {
+    text-align: center;
+    width: 120px;
+}
+
+.yuzde-daire {
+    font-size: 2.2rem;
+    font-weight: 900;
+    color: #8dc63f;
+    margin-bottom: 10px;
+}
+
+.durum-bar-arkaplan {
+    width: 100%;
+    height: 12px;
+    background: #eee;
+    border-radius: 20px;
+}
+
+.durum-bar-doluluk {
+    height: 100%;
+    background: #8dc63f;
+    border-radius: 20px;
+}
+
+@media (max-width: 1100px) {
+    .kart-listesi {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+}
+
+.kart-islemler {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+}
+
+.islem-btn {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.giris-btn { background-color: #8dc63f; color: white; } /* Nilüfer Yeşili */
+.giris-btn:hover { background-color: #7ab337; }
+
+.cikis-btn { background-color: #e74c3c; color: white; } /* Uyarı Kırmızısı */
+.cikis-btn:hover { background-color: #c0392b; }
+
+.bildirim-kutusu {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 15px 25px;
+    background-color: #005596;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    z-index: 10000;
+    opacity: 0;
+    transition: 0.5s;
+}
+.bildirim-kutusu.goster { opacity: 1; }

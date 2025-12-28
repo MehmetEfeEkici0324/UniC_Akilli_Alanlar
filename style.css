@@ -1,0 +1,146 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f4f7f6;
+}
+
+.ana-gezinti {
+    background-color: #dfebf4;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid #005596;
+}
+
+.konteynir {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-metin {
+    color: #005596;
+    font-weight: 1000;
+    font-size: 2.0rem;
+    letter-spacing: 1px;
+    line-height: 1;
+}
+
+.logo-alt-metin {
+    color: #555;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+}
+
+.menu-listesi {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.panel-konteynir {
+    position: relative;
+}
+
+.hizmet-paneli {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 220px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    margin-top: 15px;
+    padding: 10px 0;
+    
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    z-index: 999;
+}
+
+.hizmet-paneli.aktif {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+.panel-link-listesi {
+    list-style: none;
+}
+
+.panel-tek-link {
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+
+.panel-tek-link:hover {
+    background-color: #f8faff;
+    color: #005596;
+}
+
+.vurgu-cubugu {
+    width: 4px;
+    height: 15px;
+    background-color: #005596;
+    margin-right: 12px;
+    border-radius: 2px;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.panel-tek-link:hover .vurgu-cubugu {
+    opacity: 1;
+}
+
+.menu-linki {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    font-size: 1.4rem;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.menu-linki:hover {
+    color: #005596;
+}
+
+.menu-linki::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #005596;
+    transition: width 0.3s ease;
+}
+
+.menu-linki:hover::after {
+    width: 100%;
+}

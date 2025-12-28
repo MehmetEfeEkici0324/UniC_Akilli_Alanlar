@@ -1,0 +1,234 @@
+
+.nilufer-ana-sayfa {
+    padding: 80px 0;
+    background-color: #ffffff;
+}
+
+
+.slogan-merkezi {
+    text-align: center;
+    margin-bottom: 60px; 
+}
+
+.ana-baslik {
+    font-size: 3rem;
+    color: #005596;
+    font-weight: 800;
+    margin-bottom: 10px;
+    margin-right: 60px;
+}
+
+.yesil-vurgu {
+    color: #8dc63f;
+}
+
+.alt-cizgi {
+    width: 340px;
+    height: 5px;
+    background: #8dc63f;
+    margin: 15px 50px 15px 15px;
+    border-radius: 10px;
+}
+
+.alt-metin {
+    font-size: 1.2rem;
+    color: #666;
+    margin-right: 90px;
+}
+
+.haber-kartlari-grubu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px;
+}
+
+.kart {
+    background: #fdfdfd;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.kart:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.kart-resim-alani {
+    position: relative;
+    height: 200px;
+}
+
+.kart-resim-alani img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.kart-etiketi {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 5px 12px;
+    color: white;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.kart-etiketi.mavi { background: #005596; }
+.kart-etiketi.yesil { background: #8dc63f; }
+
+.kart-icerik {
+    padding: 20px;
+}
+
+.kart-icerik h3 {
+    margin-bottom: 12px;
+    color: #333;
+    font-size: 1.25rem;
+}
+
+.kart-icerik p {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.incele-butonu {
+    text-decoration: none;
+    color: #005596;
+    font-weight: 700;
+    font-size: 0.9rem;
+    border-bottom: 2px solid #005596;
+    padding-bottom: 2px;
+    transition: all 0.2s;
+}
+
+.incele-butonu:hover {
+    color: #8dc63f;
+    border-color: #8dc63f;
+}
+
+@media (max-width: 992px) {
+    .haber-kartlari-grubu {
+        grid-template-columns: 1fr;
+    }
+    .ana-baslik {
+        font-size: 2.2rem;
+    }
+}
+
+.haberler-bolumu {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+}
+
+.bolum-basligi {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.bolum-basligi h2 {
+    color: #005596;
+    font-size: 2rem;
+    position: relative;
+}
+
+.bolum-basligi h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #005596;
+    margin-top: 10px;
+}
+
+.tumunu-gor {
+    text-decoration: none;
+    color: #666;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.tumunu-gor:hover {
+    color: #005596;
+}
+
+.haber-izgarasi {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.haber-karti {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.haber-karti:hover {
+    transform: translateY(-10px);
+}
+
+.haber-gorsel {
+    position: relative;
+    height: 200px;
+}
+
+.haber-gorsel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.etiket {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #005596;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.haber-detay {
+    padding: 25px;
+}
+
+.tarih {
+    color: #999;
+    font-size: 0.8rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.haber-detay h3 {
+    color: #333;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.haber-detay p {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.devamini-oku {
+    text-decoration: none;
+    color: #005596;
+    font-weight: 700;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+}

@@ -1,0 +1,98 @@
+
+.muze-izleme-paneli {
+    padding: 60px 0;
+    background-color: #f4f7f6;
+}
+
+.kart-listesi {
+    display: grid;
+    grid-template-columns: repeat(2, 500px);
+    gap: 40px;
+    justify-content: center;
+}
+
+.bilgi-karti {
+    width: 500px;
+    height: 400px;
+    background: #ffffff;
+    border-radius: 30px;
+    padding: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #eee;
+}
+
+.muze-ust {
+    position: relative;
+    height: 180px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.muze-gorsel {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.yer-adi {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 15px;
+    background: linear-gradient(transparent, rgba(0, 85, 150, 0.9));
+    color: white;
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+.kart-govde {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5px;
+}
+
+.sol-veriler {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.veri-satiri {
+    font-size: 1.05rem;
+    color: #444;
+}
+
+.etiket { font-weight: 600; color: #005596; margin-right: 10px; }
+.deger { font-weight: 800; }
+
+/* Doluluk Göstergesi */
+.sag-doluluk {
+    text-align: center;
+    width: 120px;
+}
+
+.yuzde-daire {
+    font-size: 2.2rem;
+    font-weight: 900;
+    color: #8dc63f; 
+    margin-bottom: 10px;
+}
+
+.durum-bar-arkaplan {
+    width: 100%;
+    height: 10px;
+    background: #eee;
+    border-radius: 20px;
+}
+
+.durum-bar-doluluk {
+    height: 100%;
+    background: #8dc63f;
+    border-radius: 20px;
+    transition: width 1s ease-in-out; 
+}
