@@ -1,0 +1,17 @@
+{
+    "son_guncelleme": "07:52:43",
+    "analiz_edilen_dosya": "c:\\Users\\MDH\\Desktop\\Nil\u00fcferSosyalTesisler\\Restaurant&Cafe\\Restoran1\\foto3.jpg",
+    "toplam_kapasite": 9,
+    "dolu_masa_sayisi": 4,
+    "masalar": {
+        "masa1": "BOS",
+        "masa2": "BOS",
+        "masa3": "BOS",
+        "masa4": "BOS",
+        "masa5": "DOLU",
+        "masa6": "BOS",
+        "masa7": "DOLU",
+        "masa8": "DOLU",
+        "masa9": "DOLU"
+    }
+}

@@ -1,0 +1,67 @@
+.nilbel-yatay-kart {
+    display: flex;
+    background: #fff;
+    border-radius: 15px;
+    margin: 30px auto;
+    max-width: 1000px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    overflow: hidden;
+    min-height: 260px;
+    border: 1px solid #eee;
+}
+
+.kent-yatay-kart {
+    display: flex;
+    background: #fff;
+    border-radius: 15px;
+    margin: 30px auto;
+    max-width: 1000px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    overflow: hidden;
+    min-height: 260px;
+    border: 1px solid #eee;
+}
+
+.kent-sol { flex: 1.5; padding: 40px; display: flex; flex-direction: column; justify-content: center; }
+.nilbel-sol { flex: 1.5; padding: 40px; display: flex; flex-direction: column; justify-content: center; }
+
+.nilbel-sag-resim {
+    flex: 1;
+    background-image: url('nilbelkafe.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 0 15px 15px 0;
+    min-height: 250px;
+}
+
+.kent-sag-resim {
+    flex: 1;
+    background-image: url('nilüferkent.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 0 15px 15px 0;
+    min-height: 250px;
+}
+
+.progress-container {
+    width: 100%;
+    height: 18px;
+    background: #e0e0e0;
+    border-radius: 10px;
+    margin-top: 15px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0%; /* JS ile dolacak */
+    background: #8dc63f;
+    transition: width 0.8s ease-in-out, background-color 0.5s ease;
+}
+
+.nilbel-baslik { color: #005596; margin: 0 0 10px 0; font-size: 2rem; }
+.kent-baslik { color: #005596; margin: 0 0 10px 0; font-size: 2rem; }
+.vurgu-oran { color: #8dc63f; font-size: 1.8rem; font-weight: bold; margin-left: 10px; }
+
+
+.nilbel-not { font-size: 0.8rem; color: #999; margin-top: 20px; font-style: italic; }
