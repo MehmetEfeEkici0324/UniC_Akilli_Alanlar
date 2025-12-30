@@ -43,7 +43,7 @@ window.enUygunYeriAnalizEt = async function() {
 
         const prompt = `Nilüfer Belediyesi asistanısın. Şu an kullanıcıya konum olarak EN YAKIN ve doluluğu %80'in altında olan yer: ${enYakin.ad}. Güncel doluluk oranı: %${enYakin.yuzde}. Burayı samimi bir dille öner ve Nilüfer'de 1 milyon kaynak olduğunu belirt.`;
 
-        const response = await fetch("https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyDnKmDBtqhN-E0VcY35Rp3tUJqE7pkD5kw", {
+        const response = await fetch("https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=GOOGLE-API-KEY-SECRET", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }] })
@@ -62,4 +62,5 @@ window.enUygunYeriAnalizEt = async function() {
         aiSonuc.innerHTML = `<p style="color:red;">❌ Hata: ${err.message}</p>
         <p style="font-size:0.8rem;">İpucu: Sayfayı yenileyip tekrar deneyin.</p>`;
     }
+
 };
