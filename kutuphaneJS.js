@@ -84,7 +84,7 @@ async function enUygunYeriAnalizEt() {
             </div>`;
 
         try {
-            const API_KEY = "AIzaSyDnKmDBtqhN-E0VcY35Rp3tUJqE7pkD5kw";
+            const API_KEY = "GOOGLE-API-KEY-SECRET";
             const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEY}`, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
@@ -215,4 +215,5 @@ async function pythonuHaberdarEt(id, yeniDolu, yeniBekleyen) {
     } catch (error) {
         console.warn("Python servisi kapalı olduğu için JSON güncellenemedi.");
     }
+
 }
