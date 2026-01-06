@@ -11,3 +11,10 @@ Not: Eğer Windows kullanıyorsan ve bir yetki hatası alırsan (bazen hackathon
 
 
 -> pip install -r requirements.txt --user.
+
+## 👥 UniC Team Members
+A big thanks to the UniC Team for their hard work on this project:
+
+* Mehmet Efe Ekici - Frontend & Backend
+* Hasan Emre Patan - Researching & Backend ([https://github.com/hsnemrewei])
+* Mehmet Üren - Researching & AI ([...])
