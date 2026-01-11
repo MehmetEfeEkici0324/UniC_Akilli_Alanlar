@@ -1,8 +1,7 @@
 # UniC_Akilli_Alanlar
 Projenin temiz çalışabilmesi için VScode içerisinde Restoran1 ve Restoran2 içerisindeki iki ayrı analiz.py dosyasının ve ana klasör içerisindeki kutuphanePY.py dosyasının
 çalıştırılması gerekmektedir. Bunlar için sistemde requirements.txt dosyasının içerisindeki modül ve kütüphanelerin indirilmesi gerekmektedir. Ayrıca YOLO kullanımı yüzünden kullanılan editör üzerinde
-# Go Live 
-biçiminde çalıştırılması gerekmektedir.
+! Go Live ! biçiminde çalıştırılması gerekmektedir. 
 
 -> pip install -r requirements.txt
 
